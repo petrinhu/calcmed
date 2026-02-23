@@ -1,61 +1,55 @@
 # 💊 Calculadora de Medicamentos
 
-Aplicativo para cálculo de doses mínima, máxima e equivalências entre soluções de medicamentos em gotas ou mL.  
+Aplicativo desktop para cálculo de doses mínima, máxima e equivalências entre soluções de medicamentos em gotas ou mL.
 Projetado especialmente para médicos, farmacêuticos e profissionais de saúde.
 
 ## ✨ Funcionalidades
 
-- Calcula doses mínima e máxima em mg/kg/dia, em gotas e mL (para 1x, 2x, 3x e 4x ao dia).
+- Calcula doses mínima e máxima em mg/kg/dia, em gotas e mL (para 1×, 2×, 3× e 4× ao dia).
 - Calcula equivalência entre dois medicamentos com diferentes concentrações e número de gotas por mL.
-- Interface moderna, simples e intuitiva (Streamlit).
-- Compatível com **Linux** (recomendado).
+- Interface desktop nativa com PySide6 (Qt), cálculo em tempo real.
+- Compatível com **Linux** (recomendado), Windows e macOS.
 
 ---
 
 ## ⚡ Como rodar
 
-1. Clone este repositório:**
+**1. Clone este repositório:**
 
+```bash
+git clone https://github.com/seu-usuario/calcmed.git
+cd calcmed
+```
 
-git clone https://github.com/seu-usuario/Calculadora-de-medicamentos.git
-cd Calculadora-de-medicamentos
+**2. (Opcional) Crie um ambiente virtual Python:**
 
-2. (Opcional) Crie um ambiente virtual Python:
-
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
+**3. Instale as dependências:**
 
-3. Instale as dependências do projeto:
+```bash
+pip install -r requiriments.txt
+```
 
-pip install -r requirements.txt
+**4. Execute o aplicativo:**
 
+```bash
+python calc.py
+```
 
-4. Execute o aplicativo principal:
+---
 
-streamlit run calc.py
+## 🐧 Requisitos
 
+- Python 3.8 ou superior
+- PySide6 (`pip install PySide6`)
 
-5. Acesse o app pelo navegador:
-O app abrirá automaticamente. Caso não abra, acesse manualmente:
-http://localhost:8501
+---
 
-🖥️ Como executar em uma janela própria (sem navegador) (opcional)
+## 📄 Licença
 
-Se preferir abrir o app em uma janela desktop dedicada, execute:
-
-pip install pywebview
-python main_desktop.py
-
-🐧 Requisitos
-
-Linux (desenvolvido e testado no Ubuntu/Fedora)
-
-Python 3.8 ou superior
-
-📄 Licença
-
-MIT. Use, modifique e compartilhe!
-
-Desenvolvido por Petrus Costa
-, 2025.
+MIT — use, modifique e compartilhe.
+Desenvolvido por [Petrus Costa](https://github.com/seu-usuario), 2025.
